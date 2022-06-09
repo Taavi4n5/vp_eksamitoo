@@ -1,0 +1,52 @@
+body {
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(12, 112, 168, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgba(253, 253, 253, 0.25);
+    font-size: 48px;
+    text-align: center;
+}
+
+.container-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .container-posts {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.thumbnail {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+}
+
+.thumbnail:hover {
+    transform-origin: top left;
+    transform: scale(2);
+}
+
+.container-post-content {
+    border: 1px solid black;
+    padding: 2vw;
+    width: auto;
+}
+
+.job {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
